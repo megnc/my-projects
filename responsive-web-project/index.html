@@ -12,22 +12,84 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
     <title>Loruki | Cloud Hosting For Everyone</title>
   </head>
   <body>
     <!-- Navbar -->
     <div class="navbar">
-      <div class="container">
+      <!-- we should make container flexbox not the navbar but we will add and extra class for flex -->
+      <div class="container flex">   
         <h1 class="logo">Loruki.</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Home</a></li>
+                    <li><a href="docs.html">Docs</a></li>
                     <li></li>
                 </ul>
             </nav>
       </div>
     </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>Easier Deployment</h1>
+          <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to tr</p>
+          <a href="features.httml" class="btn btn-outline">Read More</a>
+        </div>
+
+        <div class="showcase-form card">
+          <h2> Request a Demo</h2>
+          <!-- for the forming a form :) we need usually info box and button to make these
+          we use input[various] name and placeholder in it -->
+          <form>
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-control">
+              <input type="text" name="company" placeholder="Company Name" required>
+            </div>
+            <div class="form-control">
+              <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <!-- input type of the button is submit and we make two button one for general
+            and one for individual -->
+            <input type="submit" value="Send" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container">
+        <!-- give classes to avoid struggling to much css -->
+        <h3 class="stats-heading text-center my-1">
+          Welcome to the best platform for building 
+          applications of all types with modern architecture and scaling
+        </h3>
+        <div class="grid grid-3 text-center my-4">
+          <div>
+            <i class="fas fa-server fa-3x"></i>
+            <h3>10,349,405</h3>
+            <p class="text-secondary">Deployments</p>
+          </div>
+          <div>
+            <i class="fas fa-upload fa-3x"></i>
+            <h3>987 SB</h3>
+            <p class="text-secondary">Published</p>
+          </div>
+          <div>
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h3>2,343,265</h3>
+            <p class="text-secondary">Projects</p>
+          </div>
+          </div>
+        </div>
+    </section>
+
   </body>
 </html>
