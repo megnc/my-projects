@@ -19,16 +19,16 @@
     <!-- Navbar -->
     <div class="navbar">
       <!-- we should make container flexbox not the navbar but we will add and extra class for flex -->
-      <div class="container flex">   
+      <div class="container flex">
         <h1 class="logo">Loruki.</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Docs</a></li>
-                    <li></li>
-                </ul>
-            </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <li></li>
+          </ul>
+        </nav>
       </div>
     </div>
 
@@ -37,27 +37,35 @@
       <div class="container grid">
         <div class="showcase-text">
           <h1>Easier Deployment</h1>
-          <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to tr</p>
+          <p>
+            Deploy web apps of all kinds, from large scale enterprise APIs to
+            static websites for individuals. Fill out the form to tr
+          </p>
           <a href="features.httml" class="btn btn-outline">Read More</a>
         </div>
 
         <div class="showcase-form card">
-          <h2> Request a Demo</h2>
+          <h2>Request a Demo</h2>
           <!-- for the forming a form :) we need usually info box and button to make these
           we use input[various] name and placeholder in it -->
           <form>
             <div class="form-control">
-              <input type="text" name="name" placeholder="Name" required>
+              <input type="text" name="name" placeholder="Name" required />
             </div>
             <div class="form-control">
-              <input type="text" name="company" placeholder="Company Name" required>
+              <input
+                type="text"
+                name="company"
+                placeholder="Company Name"
+                required
+              />
             </div>
             <div class="form-control">
-              <input type="text" name="email" placeholder="Email" required>
+              <input type="text" name="email" placeholder="Email" required />
             </div>
             <!-- input type of the button is submit and we make two button one for general
             and one for individual -->
-            <input type="submit" value="Send" class="btn btn-primary">
+            <input type="submit" value="Send" class="btn btn-primary" />
           </form>
         </div>
       </div>
@@ -68,8 +76,8 @@
       <div class="container">
         <!-- give classes to avoid struggling to much css -->
         <h3 class="stats-heading text-center my-1">
-          Welcome to the best platform for building 
-          applications of all types with modern architecture and scaling
+          Welcome to the best platform for building applications of all types
+          with modern architecture and scaling
         </h3>
         <div class="grid grid-3 text-center my-4">
           <div>
@@ -87,9 +95,97 @@
             <h3>2,343,265</h3>
             <p class="text-secondary">Projects</p>
           </div>
-          </div>
         </div>
+      </div>
     </section>
 
+    <!-- Cli  -->
+    <section class="cli">
+      <div class="container grid">
+        <img src="images/cli.png" alt="" />
+        <div class="card">
+          <h3>Easy to use, cross platform CLI</h3>
+        </div>
+        <div class="card">
+          <h3>Deploy in seconds</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud -->
+
+    <section class="cloud bg-primary my-2 py-2">
+      <div class="container grid">
+        <div class="text-center">
+          <h2 class="lg">Extreme Cloud Hosting</h2>
+          <p class="lead my-1">Cloud hosting like you`ve never seen.
+          Fast efficient and scalable</p>
+          <a href="features.html" class="btn btn-dark">Read More</a>
+        </div>
+        <img src="images/cloud.png" alt="">
+      </div>
+    </section>
+
+    <!-- Lanugages -->
+
+    <section class="languages">
+      <h2 class="med text-center my-2">
+        Supported Languages
+      </h2>
+      <div class="container flex">
+        <div class="card">
+          <h4>Node.js</h4>
+          <img src="images/logos/node.png" alt="">
+      </div>
+      <div class="card">
+          <h4>Python</h4>
+          <img src="images/logos/python.png" alt="">
+        </div>
+        <div class="card">
+          <h4>C#</h4>
+          <img src="images/logos/csharp.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Ruby</h4>
+          <img src="images/logos/ruby.png" alt="">
+        </div>
+        <div class="card">
+          <h4>PHP</h4>
+          <img src="images/logos/php.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Scala</h4>
+          <img src="images/logos/scala.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Clojure</h4>
+          <img src="images/logos/clojure.png" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+          <div>
+              <h1>Loruki
+              </h1>
+              <p>Copyright &copy; 2020</p>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="docs.html">Docs</a></li>
+              </ul>
+          </nav>
+          <div class="social">
+              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+      </div>
   </body>
 </html>
